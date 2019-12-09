@@ -1,3 +1,375 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.topnav{
+	padding-top:40px;
+	color: grey;
+	width: 90%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.greatidea{
+    display:flex;
+	justify-content:flex-start;
+	width: 5%;
+	padding-left:150px;
+	
+}
+.topheader{
+	padding-top:40px;
+	display: flex;
+}
+.largetext{
+	font-size: 100px;
+}
+
+.headertext{
+	text-align: center;
+	width: 50%;
+	}
+.headerimage{
+	display:flex;
+	padding-left: 300px;
+}
+#getstarted {
+	border:1px solid black;
+	padding: 5px 20px;
+}
+header{
+	padding-bottom: 80px;
+}
+hr {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.featuresabout{
+	display:flex;
+	flex-direction:row;
+
+	justify-content:space-evenly;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-right: 5%;
+	margin-left: 5%;
+
+}
+.features{
+	width: 49%;
+
+}
+.about{
+	width: 50%;
+
+}
+
+.middle-img {
+	width: 90%;
+	display: flex;
+	margin-left: 5%;
+	}
+
+.servicessection{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	padding-top: 40px;
+	padding-bottom:20px;
+	margin-left:50px;
+	margin-right:50px;
+
+}
+.services{
+width:30%;
+}
+.product{
+width:30%;
+}
+.vision{
+width:30%;
+}
+.contact{
+	padding-top: 40px;
+	margin-left: 90px;
+}
+footer{
+	padding-top:40px;
+	text-align: center;
+}
+.headerservice{
+	flex:none;
+	display:flex;
+	justify-content:center;
+	width: 90%;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.headerservice img{
+	width: 100%;
+	margin-left:5%;
+
+}
+.headservicestxt{
+	width:90%;
+	margin-left:5%;
+}
+h1{
+	font-weight:bold;
+}
 
 
+
+.learnmore{
+	border-radius: 7px;
+	border: 1px solid;
+	padding: 5px;
+	background-color: white;
+}
+.centercontent{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	padding-top:40px;
+	padding-bottom:40px;
+	
+}.centercontent p{
+	padding-bottom:20px;
+}
+
+.digitaldesign{
+	width:43%;
+	border: 1px solid black;
+	padding:40px;
+	background-color:lightgrey;
+	margin-bottom:40px;
+}
+.uxui{
+	width:43%;
+	border: 1px solid black;
+	padding:40px;
+	background-color:lightgrey;
+	margin-bottom:40px;
+} 
+.digitalmarketing{
+	width:43%;
+	border: 1px solid black;
+	padding:40px;
+	background-color:lightgrey;
+	margin-bottom:40px;
+}
+.development{
+	width:43%;
+	border: 1px solid black;
+	padding:40px;
+	background-color:lightgrey;
+	margin-bottom:40px;
+}
+.iosdevelopment{
+	width:43%;
+	padding:40px;
+	border: 1px solid black;
+	background-color:lightgrey;
+	
+}
+.androiddevelopment{
+	border: 1px solid black;
+	width:43%;
+	padding:40px;
+	background-color:lightgrey;
+}
+ul{
+	list-style-type: square;
+
+}
+.factsaboutservices{
+	
+	margin-left:5%;
+	width:50%;
+	padding-bottom:20px;
+	padding-top: 40px;
+}
+.factsaboutservices p{
+	padding-bottom:20px;
+	width:50%;
+}
+
+.bottomimage{
+	display:flex;
+	width:49%;
+	border: 1px solid orange;
+	padding-left: 130%;
+	margin-top:-250px;
+
+}
+.list{
+	padding: 5px;
+	margin-left:5%;
+	}
+/* mobiel styling */
+
+
+@media(max-width: 500px){
+    .headerimage{
+      display: none;
+  }
+ .largetext{
+     font-size: 30px;
+ }
+.headertext{
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    margin-left:25%;
+    margin-right:25%;
+    }
+#getstarted{
+    margin-top:20px;
+}
+.featuresabout{
+        display:flex;
+        flex-direction:column;
+         justify-content:space-evenly;
+         align-items:center;
+        width:90%;
+         padding-bottom: 40px;
+        padding-top: 40px;
+        margin-right:5%;
+        margin-left:5%;
+        }
+.features{
+    width: 90%;
+        
+ }
+ .about{
+     width: 90%;
+}
+.servicessection{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    padding-top: 40px;
+    padding-bottom:40px;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+ .services{
+    width:90%;
+ }
+.product{
+     width:90%;
+ }
+ .vision{
+    width:90%;
+}
+hr {
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:-20px;
+}
+.topnav{
+    height:25%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:5%;
+    
+}
+.topnav a{
+    display:flex;
+    justify-content:space-evenly;
+    width:110%;
+    border-top: 1px solid black;
+    padding-top:7px;
+    padding-bottom:7px;
+    
+}
+.greatidea{
+    display:flex;
+    align-items:middle;
+    width:50%;
+    margin-top:-43%;
+    margin-bottom:34%;
+    margin-left: 5%;
+}
+
+.contact{
+    text-align:left;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+#contactanchor{
+    border-bottom: 1px solid black;
+}
+.middle-img {
+    widows: 100%;
+    margin-right:5%;
+    margin-left:5%;
+}
+}
